@@ -1,12 +1,11 @@
 package model;
 
-import java.time.LocalDate;
+public class PessoaJuridica extends Cliente{
 
-public class PessoaJuridica extends Cliente {
     private String cnpj;
     private String razaoSocial;
 
-    public PessoaJuridica(double limiteCredito, Endereco endereco, String cnpj, String razaoSocial, LocalDate localDate) {
+    public PessoaJuridica(double limiteCredito, Endereco endereco, String cnpj, String razaoSocial) {
         super(limiteCredito, endereco);
         this.cnpj = cnpj;
         this.razaoSocial = razaoSocial;

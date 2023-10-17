@@ -4,22 +4,22 @@ import java.time.LocalDate;
 
 public class PessoaFisica extends Cliente{
 
-    private String cpf;
+    private int cpf;
     private String nome;
     private LocalDate nascimento;
 
-    public PessoaFisica(double limiteCredito, Endereco endereco, String cpf, String nome, LocalDate nascimento) {
+    public PessoaFisica(double limiteCredito, Endereco endereco, int cpf, String nome, LocalDate nascimento) {
         super(limiteCredito, endereco);
         this.cpf = cpf;
         this.nome = nome;
         this.nascimento = nascimento;
     }
 
-    public String getCpf() {
+    public int getCpf() {
         return cpf;
     }
 
-    public void setCpf(String cpf) {
+    public void setCpf(int cpf) {
         this.cpf = cpf;
     }
 
